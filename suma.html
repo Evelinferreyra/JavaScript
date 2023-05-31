@@ -13,6 +13,16 @@
     <input id="numero2" type="number" >
     <button type="button" onclick="sumar()">sumar</button>
     <p id="resultado"></p>
-    <script src="suma.js"></script>
+    <script>
+        function sumar(){
+            const numero1 = document.getElementById('numero1')
+            const numero2 = document.getElementById('numero2')
+            const resultado = document.getElementById('resultado')
+            const numero1Value = Number(numero1.value)
+            const numero2Value = Number(numero2.value)
+            const resultadoValue = numero1Value + numero2Value
+            resultado.innerHTML = resultadoValue
+         }
+    </script>
 </body>
 </html>
